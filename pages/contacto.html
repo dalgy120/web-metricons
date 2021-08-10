@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contacte con nosotros, solicita tu presupuesto y aclararemos todas tus dudas">
+    <meta name="keywords" content="constructora, drywall, puertas de vidrio, remodelación, clientes, metricons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_sass.css">
+
+    <script src="../bootstrap/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    
+    <title>Contacto | Metricons</title>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <!--Logo de la empresa-->
+        <a href="../index.html" class="header__logo"></a>
+
+        <nav class="navbar navbar-expand-lg navbar-dark  header__menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./obras.html" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown">Obras</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./obras.html#comerciales">Comerciales</a>
+                            <a class="dropdown-item" href="./obras.html#industriales">Industriales</a>
+                            <a class="dropdown-item" href="./obras.html#agroindustriales">Agroindustriales</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clientes.html">Clientes</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container container--margin">
+        <h1 class="title">CONTACTANOS</h1>
+        <form action="/index.html" class="formContact">
+
+            <fieldset class="contact">
+                <legend class="contact__legend">Datos Personales</legend>
+
+                <div class="contact__wrapInputs">
+                    <div class="contact__boxInput">
+                        <label class="contact__inputLabel" for="name">Nombre</label>
+                        <input class="contact__input" type="text" id="name" placeholder="Ingresa tu nombre..." required>
+                    </div>
+                    <div class="contact__boxInput">
+                        <label class="contact__inputLabel" for="lastname">Apellido</label>
+                        <input class="contact__input" type="text" id="lastname" placeholder="Ingresa tu apellido..." required>
+                    </div>
+                </div>
+
+                <div class="contact__wrapInputs">
+                    <div class="contact__boxInput">
+                        <label class="contact__inputLabel" for="email">Correo electrónico</label>
+                        <input class="contact__input" type="text" id="email" placeholder="Ingresa tu correo..." required>
+                    </div>
+                    <div class="contact__boxInput">
+                        <label class="contact__inputLabel" for="phone">Teléfono</label>
+                        <input class="contact__input" type="text" id="phone" placeholder="Ingresa tu teléfono..." required>
+                    </div>
+                </div>
+
+                <div class="contact__select">
+                    <label class="contact__inputLabel">Tipo de ente</label>
+
+                    <select class="contact__input">
+                        <option disabled selected>--Selecciona una opción--</option>
+                        <option>Natural</option>
+                        <option>Jurídico</option>
+                    </select>
+                </div>
+
+                <div class="contact__wrapInputs">
+                    <div class="contact__select">
+                        <label class="contact__inputLabel" for="commentary">Mensaje</label>
+                        <textarea class="contact__textarea" type="text" id="commentary" placeholder="Escribenos que necesitas..." required></textarea>
+                    </div>
+                </div>
+
+                <span class="contact__newsletter">
+                    <label class="contact__inputLabel" for="newsletter">Acepto subscribirme al Newsletter</label>
+                    <input class="contact__input" type="checkbox" id="newsletter" value="si">
+                </span>
+
+                <div class="contact__button">
+                    <input type="submit" class="contact__buttonPrimary" value="Enviar datos">
+                    <input type="reset" class="contact__buttonSecundary" value="Limpiar datos">
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        
+        <span class="footer__links">
+            <a class="footer__link">Ayuda</a>
+            <a class="footer__link">Privacidad</a>
+            <a class="footer__link">Condiciones</a>
+            <a class="footer__link">Contacto</a>
+        </span>
+        <span class="footer__logoMedia">
+            <img class="footer__image" src="../media/logo-instagram.png" alt="instagram">
+            <img class="footer__image" src="../media/logotipo-facebook.png" alt="facebook">
+            <img class="footer__image" src="../media/Linkedin-símbolo.png" alt="linkedin">
+        </span>
+    </footer>
+
+</body>
+
+</html>

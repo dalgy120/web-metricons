@@ -1,0 +1,685 @@
+/*Estilos generales del sitio*/
+html {
+    font-size: 16px;
+    color: #333;
+    
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    word-spacing: 2px;
+    height: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(26, 25, 25);
+}
+
+.logo {
+    display: block;
+    width: 275px;
+    height: 64px;
+    background-image: url(/media/logo_small.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4px;
+    margin-left: 16px;
+}
+
+.containerOffers {
+    width: 100%;
+}
+.offers {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-top: 42px;
+    background-image: url(/media/ofertas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 4px;
+}
+
+
+.design {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-top: 42px;
+    background-image: url(/media/home-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 4px;
+}
+
+.contentOffers {
+    display: flex;
+    background-color: #000000b3;
+    margin: 14% 10%;
+    height: 80px;
+    width: 80%;
+    font-weight: 300;
+    position: absolute;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.titleMain {
+    color: #ff6600;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.titleSecondary {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 48px;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+.titleClients {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff6600;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.commentary {
+    font-style: italic;
+}
+
+.menuHeader {
+    display: block;
+    margin: 0 auto;
+    background-color: #36c;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+}
+
+.dropdown-menu.show {
+    background-color: rgb(28, 28, 29);
+}
+
+.menuHeader .navbar-toggler-icon {
+    color: white;
+}
+.menuHeader.navbar-dark .navbar-nav .nav-link, .menuHeader.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.menuHeader .nav-item {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menuHeader .dropdown-item {
+    padding: 0.75rem 1.5rem;
+}
+
+
+.menu {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin: 0;
+}
+
+.menuHeader li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 14px;
+    transition: background-color 0.5s;
+    min-width: 80px;
+    text-align: center;
+}
+
+.menuHeader li#openMenu{
+    color: white;
+    text-align: end;
+    padding: 8px 16px;
+    line-height: 16px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.menuHeader li:hover {
+    background-color: rgb(7, 73, 206);
+
+}
+
+.menuHeader a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    line-height: 20px;
+}
+
+.menuHeader li:hover .submenu {
+    display: block;
+}
+
+.menuHeader li#obrasMenu {
+    position: relative;
+}
+
+.menuHeader li#obrasMenu a{
+    pointer-events: none;
+}
+
+.menuHeader li#obrasMenu .submenu a{
+    pointer-events: all;
+}
+
+.submenu {
+    position: relative;
+    display: none;
+    width: auto;
+    background-color: rgb(28, 28, 29);
+    padding: 0;    
+    text-align: center;
+}
+
+.submenu:hover{
+    display: block;
+    background-color: rgb(26, 25, 25);
+}
+
+.submenu li {
+    display: block;
+    padding: 12px;
+    line-height: 22px;
+    border: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.contentBanner {
+    overflow: hidden;
+}
+
+.contentBanner img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes zoomImage {
+    0% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.contentMain, .contentBusiness, .contentClients {
+    padding: 0 16px;
+    font-size: 1rem;
+    margin-top: 60px;
+    display: block;
+}
+
+.contentMain {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100% - 268px);
+    box-sizing: border-box;
+}
+
+.contentBusiness p {
+    max-width: 800px;
+    margin: auto;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.tableClients {
+    border:0;
+    margin: 8px auto 32px auto;
+    box-shadow: 0px 8px 12px -4px rgb(211, 208, 208);
+    font-size: 1rem;
+    font-weight: 300;
+    border-collapse: collapse;
+    overflow-x: auto;
+    min-width: 400px
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead th {
+    font-weight: 500;
+}
+
+
+.tableClients tr:nth-child(2n) {
+    background-color: white;
+}
+
+.tableClients thead {
+    background-color: #36c;
+    color: ivory;
+}
+
+.listTable {
+    list-style-type: square;
+    list-style-position: outside;
+    padding-left: 0;
+    line-height: 20px;
+}
+
+thead th {
+    border: 0;
+}
+
+/*Estilos de la página de contactos*/
+.formContact {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin: auto;
+}
+
+.contentContact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    box-shadow: 0px 8px 12px -4px rgb(214, 212, 212);
+    padding: 24px 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.contentContact label {
+    line-height: 32px;
+}
+
+.contentContact select, .contentContact input {
+    margin: 8px 0;
+    padding: 8px;
+    font-size: 1rem;
+    color: rgb(80, 79, 79);
+}
+
+.contentVideo {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+    min-height: 240px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contentVideo iframe{
+    min-height: 240px;
+    width: 100%;
+
+}
+
+.listService {
+    text-align: left;
+    list-style-position:inside;
+    margin: 16px auto 48px;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 860px;
+    line-height: 16px;
+}
+
+.contentForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contentInput {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 180px;
+}
+
+.contentSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto
+}
+
+.contentButton {
+    display: inline-block;
+    text-align: center;
+    margin: 30px 50px 16px;
+}
+
+.contentButton input {
+    font-size: 1rem;
+    padding: 8px;
+    text-align: center;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contentSelect textarea {
+    min-height: 100px;
+}
+
+.contentButton .buttonPrimary {
+    border: 0;
+    color: white;
+    background-color: #fc7922;
+    transition: background-color 0.5s;
+}
+
+.imageText {
+    max-width: 6rem;
+}
+
+.contentTape {
+    margin: 32px auto;
+}
+
+.buttonPrimary:hover {
+    background-color: #e4610a;
+}
+
+.contentButton .buttonSecundary {
+    border: 1px solid #fc7922;
+    color: #fc7922;
+    background-color: white;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.buttonSecundary:hover {
+    background-color: #e4610a;
+    color: white;
+
+}
+
+.contentNewsletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.contentNewsletter label {
+    margin-right: 10px;
+}
+
+/*Estilos de la página de obras*/
+
+.ourWorks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.imageWork {
+    display: inline-block;
+    margin: 8px 4px;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 4px;
+    border: 1px solid rgb(187, 187, 187);
+    width: 100%;
+    max-width: 312px;
+    box-shadow: 0px 8px 12px -4px rgb(211, 208, 208)
+}
+
+.imageCard {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.imageWork h4{
+    padding: 0 8px;
+    font-weight: 300;
+}
+
+.titleWorks {
+    font-size: 24px;
+    margin: 16px 16px 44px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contentWorks {
+    display: block;
+    padding: 32px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/*Estilos de la página de clientes*/
+
+.listClients {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 48px auto;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 300px;
+    text-align: center;
+    min-width: 240px;
+    flex-grow: 1;
+}
+
+.logoClient {
+    width: 100px;
+    height: 98px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.logoClient img {
+    width: 100%;
+    max-width: 100px;
+    margin: auto;
+}
+
+.containerMain {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    min-height: calc(100% - 268px);
+    background-color: #fdfdfd;
+    padding: 32px 16px;
+    box-sizing: border-box;
+}
+
+/*Estilos del pie de página*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    margin-top: 32px;
+    font-size: 1rem;
+    background: linear-gradient(to top, #222222,  #666565);
+    color: white;
+    padding: 8px;
+}
+
+.linksFooter a{
+    margin: 8px;
+}
+
+.footer a:nth-child(1) {
+    border-left:0;
+}
+
+.linksFooter{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logoMedia img {
+    width: 3rem;
+    padding: 0%;
+}
+
+.logoMedia {
+    display: flex;
+    justify-content: center;
+}
+
+.contentGrid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr); 
+    align-items: stretch;
+    justify-content: stretch;
+    
+}
+
+.contentTable {
+    overflow-x: auto;
+    display: block;
+}
+
+@media only screen and (min-width: 480px) {
+    
+    .footer{
+        flex-direction: row;
+    }
+    
+    .logoMedia img {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .titleMain{
+        font-size: 2rem;
+    }
+
+    .titleSecondary{
+        font-size: 1.5rem;
+    }
+
+    .titleClients{
+        font-size: 2rem;
+    }
+
+    .menu {
+        text-align: right;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menuHeader li#openMenu{
+        display: none;
+    }
+
+    .linksFooter{
+        flex-direction: row;
+    }
+    .linksFooter a {
+        line-height: 24px;
+        margin: 8px;
+        border-left: 1px solid white;
+        padding-left: 8px;
+        cursor: pointer;
+    }
+
+    .menuHeader {
+        max-height: 100%;
+    }
+        
+    .menuHeader li#obrasMenu a{
+        pointer-events: all;
+    }
+
+    .submenu{
+        position: absolute;
+        left: 0;
+        top: 59px;
+        z-index: 1;
+    }
+
+
+    .submenu li{
+        text-align: left;
+        border: 0;
+    }
+
+    .contentGrid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    
+    .contentOffers {
+        margin: 6% 25% auto 25%;
+        height: 80px;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .menuHeader li{
+        border-left: 1px solid white;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    
+    .contentGrid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
