@@ -110,13 +110,19 @@ h4 {
 
 .header__logo {
     display: block;
-    width: 287px;
-    height: 72px;
+    width: 200px;
+    height: 60px;
     background-image: url(/media/logo_small.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: 4px;
     margin-left: 16px;
+    
+    @media (min-width: map-get($breakpoints, md)) {
+        width: 287px;
+        height: 72px;
+
+    }
 }
 
 .header__error {
@@ -276,6 +282,30 @@ h4 {
 
 }
 
+.sectionCardsObras{
+   margin: auto;
+   display: block;
+}
+
+.sectionCardsObras__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+
+    @media (min-width: map-get($breakpoints, md)) {
+        flex-direction: row;
+    }
+}
+
+.card--margin {
+    margin: 8px 0;
+    
+    @media (min-width: map-get($breakpoints, md)) {
+        margin: 0 8px;
+    }
+}
+
 .clients__tableHead{
     background-color: $menuPrimary;
     color: ivory;
@@ -363,7 +393,7 @@ h4 {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 8px;
     border-radius: 4px;
 
@@ -372,6 +402,7 @@ h4 {
         margin: 6% 25% auto 25%;
         height: 80px;
         width: 50%;
+        font-size: 1.5rem;
     }
 
 }
@@ -610,6 +641,7 @@ h4 {
     text-align: center;
     font-weight: 500;
 }
+
 
 .contentWorks__our {
     display: flex;

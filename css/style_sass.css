@@ -68,13 +68,17 @@ h4 {
 
 .header__logo {
   display: block;
-  width: 287px;
-  height: 72px;
+  width: 200px;
+  height: 60px;
   background-image: url(/media/logo_small.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 4px;
   margin-left: 16px; }
+  @media (min-width: 600px) {
+    .header__logo {
+      width: 287px;
+      height: 72px; } }
 
 .header__error {
   display: block;
@@ -190,6 +194,25 @@ h4 {
   .clients__table tr:nth-child(2n) {
     background-color: white; }
 
+.sectionCardsObras {
+  margin: auto;
+  display: block; }
+
+.sectionCardsObras__content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center; }
+  @media (min-width: 600px) {
+    .sectionCardsObras__content {
+      flex-direction: row; } }
+
+.card--margin {
+  margin: 8px 0; }
+  @media (min-width: 600px) {
+    .card--margin {
+      margin: 0 8px; } }
+
 .clients__tableHead {
   background-color: #36c;
   color: ivory; }
@@ -261,14 +284,15 @@ h4 {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 8px;
   border-radius: 4px; }
   @media (min-width: 600px) {
     .offersCarousel__item {
       margin: 6% 25% auto 25%;
       height: 80px;
-      width: 50%; } }
+      width: 50%;
+      font-size: 1.5rem; } }
 
 /*Bloque*/
 .contentTape {
