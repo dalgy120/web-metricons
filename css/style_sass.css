@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Variables SASS*/
-.contact__buttonPrimary, .contact__buttonSecundary {
+.btn-primary--color, .contact__buttonPrimary, .contact__buttonSecundary {
   font-size: 1rem;
   padding: 8px;
   text-align: center;
@@ -23,13 +23,14 @@ body {
   word-spacing: 2px;
   height: 100%;
   flex-direction: column;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f1f1f1; }
 
 h4 {
   font-weight: 400; }
 
 .title {
-  color: #ff6600;
+  color: #bdb46e;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
@@ -37,6 +38,15 @@ h4 {
   @media (min-width: 600px) {
     .title {
       font-size: 2rem; } }
+
+.btn-primary--color {
+  border: 1px solid #bdb46e;
+  color: #bdb46e;
+  background-color: #ffffff; }
+  .btn-primary--color:hover {
+    background-color: #aca25a;
+    color: #ffffff;
+    border: 0; }
 
 .contentError {
   background-color: #d3d3d3;
@@ -70,7 +80,6 @@ h4 {
   display: block;
   width: 200px;
   height: 60px;
-  background-image: url(/media/logo_small.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 4px;
@@ -195,7 +204,7 @@ h4 {
     background-color: white; }
 
 .sectionCardsObras {
-  margin: auto;
+  margin: 48px auto;
   display: block; }
 
 .sectionCardsObras__content {
@@ -214,7 +223,7 @@ h4 {
       margin: 0 8px; } }
 
 .clients__tableHead {
-  background-color: #36c;
+  background-color: #333333;
   color: ivory; }
   .clients__tableHead th {
     font-weight: 500;
@@ -226,7 +235,7 @@ h4 {
 .clients__title {
   text-align: center;
   font-size: 1.5rem;
-  color: #ff6600;
+  color: #bdb46e;
   text-transform: uppercase;
   font-weight: 600; }
   @media (min-width: 600px) {
@@ -258,7 +267,7 @@ h4 {
   text-align: center; }
 
 .business__title {
-  color: #ff6600;
+  color: #bdb46e;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
@@ -308,7 +317,7 @@ h4 {
   background-color: #1c1c1d; }
 
 .titleWorks {
-  color: #ff6600;
+  color: #bdb46e;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem; }
@@ -341,7 +350,7 @@ h4 {
   border-radius: 4px; }
 
 .titleMain {
-  color: #ff6600;
+  color: #bdb46e;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem; }
@@ -431,17 +440,18 @@ h4 {
 .contact__buttonPrimary {
   border: 0;
   color: #ffffff;
-  background-color: #ff6600; }
+  background-color: #bdb46e; }
   .contact__buttonPrimary:hover {
-    background-color: #e4610a; }
+    background-color: #aca25a; }
 
 .contact__buttonSecundary {
-  border: 1px solid #ff6600;
-  color: #ff6600;
+  border: 1px solid #bdb46e;
+  color: #bdb46e;
   background-color: #ffffff; }
   .contact__buttonSecundary:hover {
-    background-color: #e4610a;
-    color: #ffffff; }
+    background-color: #aca25a;
+    color: #ffffff;
+    border: 0; }
 
 .contact__newsletter {
   display: flex;
