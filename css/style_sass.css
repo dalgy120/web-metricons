@@ -344,7 +344,7 @@ h4 {
   height: 100%;
   min-height: 200px;
   max-height: 200px;
-  background-image: url(/media/ofertas.jpeg);
+  background-image: url(media/ofertas.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -356,7 +356,7 @@ h4 {
   height: 100%;
   min-height: 200px;
   max-height: 200px;
-  background-image: url(/media/home-image.jpg);
+  background-image: url(media/home-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
