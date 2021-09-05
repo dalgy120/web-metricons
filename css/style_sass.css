@@ -31,6 +31,7 @@ h4 {
 
 .title {
   color: #bdb46e;
+  margin-bottom: 34px;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
@@ -54,6 +55,9 @@ h4 {
 
 .container--margin {
   margin: 36px auto auto auto; }
+  @media (min-width: 1200px) {
+    .container--margin {
+      min-height: calc(100vh - 200px); } }
 
 .errorNotFound {
   display: flex;
@@ -72,9 +76,11 @@ h4 {
 /*Estilos de la cabecera de la página*/
 /*Bloque*/
 .header {
-  background-color: #333333;
-  display: flex;
-  justify-content: space-between; }
+  background-color: #333333; }
+  @media (min-width: 1200px) {
+    .header {
+      display: flex;
+      justify-content: space-between; } }
 
 .header__logo {
   display: block;
@@ -97,11 +103,14 @@ h4 {
   margin-left: 16px; }
 
 .header__menu {
-  display: block;
+  display: flex;
   margin: 0;
   text-transform: uppercase;
   font-size: 1rem;
   color: white; }
+  @media (min-width: 1200px) {
+    .header__menu {
+      display: block; } }
   .header__menu .dropdown-item {
     padding: 0.75rem 1.5rem; }
   .header__menu .navbar-toggler-icon {
@@ -296,6 +305,8 @@ h4 {
   font-size: 1rem;
   padding: 8px;
   border-radius: 4px; }
+  .offersCarousel__item:hover {
+    color: white; }
   @media (min-width: 600px) {
     .offersCarousel__item {
       margin: 6% 25% auto 25%;
@@ -312,6 +323,8 @@ h4 {
 
 .contentBanner {
   overflow: hidden; }
+  .contentBanner .carousel {
+    max-height: 418px; }
 
 .dropdown-menu.show {
   background-color: #1c1c1d; }
@@ -583,9 +596,6 @@ h4 {
   @media (min-width: 600px) {
     .contentGrid {
       grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 992px) {
-    .contentGrid {
-      grid-template-columns: repeat(4, 1fr); } }
 
 @keyframes zoomImage {
   0% {
