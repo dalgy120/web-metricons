@@ -760,3 +760,25 @@ h4 {
         transform: scale(1.5);
     }
 }
+
+
+.footer__icon {
+    font-size: 1.5rem;
+    padding: 8px;
+    cursor: pointer;
+    &:hover{
+        color: rgb(173, 173, 173);
+    }
+}
+
+.addressMap{
+    width: 100%;
+    display: block;
+    padding: 32px;
+    box-sizing: border-box;
+    margin-top: 32px;
+
+    .title{
+        margin-bottom: 24px;
+    }
+}
